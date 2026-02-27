@@ -1,4 +1,4 @@
-/*💡 Exercise 1: Copy & Extend an Array
+/* Exercise 1: Copy & Extend an Array
 
                         Goal: Learn array copying with spread
                         
@@ -16,11 +16,11 @@
                               -> Print both arrays
                         
                         
-                        ✅ Expected Output
+                         Expected Output
                               ["apple", "banana"]
                               ["apple", "banana", "orange"]
                         
-                        👉 Original array should NOT change.
+                        Original array should NOT change.
 
 */
 
