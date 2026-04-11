@@ -1,0 +1,30 @@
+###
+
+1.Creating Package 
+--npm init -y
+2. create Http server
+//instal and import
+
+    //Instal
+--npm instal express
+//instal from nodejs to application
+    //import
+
+3.Set aport number
+
+
+###Creating emoployee collections and insert 5 documents
+{
+    empid:"",
+    name:"",
+    skills:"",
+    experiences:[
+        {
+            companyname:"",
+            yearOfExperiences:""
+        }
+    ]
+}
+1.find employ with react skill
+
+
