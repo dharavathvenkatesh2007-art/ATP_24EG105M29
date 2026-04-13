@@ -8,5 +8,7 @@ Content-Type: application/json
 }
 
 ### Read all USERS & AUTHORS (email)
+GET http://localhost:4000/auth/users
 
 ### Block or Activate User or Author
+PATCH http://localhost:4000/auth/user/69b3c780ad975da58db3ba1/block
