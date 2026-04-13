@@ -31,8 +31,8 @@ const API_BASE = 'http://localhost:4000';
 function AdminProfil() {
   const { currentUser, loading, logout } = useAuth();
   const navigate = useNavigate();
-  const [users, setUsers] = useState([]); // ✅ new state for all users
-  const [articles, setArticles] = useState([]); // ✅ new state for all articles
+  const [users, setUsers] = useState([]); //  new state for all users
+  const [articles, setArticles] = useState([]); //  new state for all articles
   const [currentPassword, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
   const [message, setMessage] = useState('');
