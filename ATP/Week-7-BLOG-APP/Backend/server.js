@@ -29,11 +29,14 @@ app.use("/admin-api", adminApp);
 app.use("/auth", commonApp);
 
 //connect to db
+let dbConnection = null;
 const connectDB = async () => {
+  if (dbConnection) return dbConnection;
+
   try {
-    await connect(process.env.DB_URL);
+    dbConnection = await connect(process.env.DB_URL);
     console.log("DB server connected");
-    
+
     // Seed admin user if it doesn't exist
     const adminExists = await UserModel.findOne({ email: "admin@mail.com" });
     if (!adminExists) {
@@ -50,16 +53,20 @@ const connectDB = async () => {
     } else {
       console.log("Admin user already exists");
     }
-    
-    //assign port
-    const port = process.env.PORT || 5000;
-    app.listen(port, () => console.log(`server listening on ${port}..`));
+
+    return dbConnection;
   } catch (err) {
     console.log("err in db connect", err);
+    throw err;
   }
 };
 
-connectDB();
+const handler = async (req, res) => {
+  await connectDB();
+  app(req, res);
+};
+
+export default handler;
 
 //to handle invalid path
 app.use((req, res, next) => {
