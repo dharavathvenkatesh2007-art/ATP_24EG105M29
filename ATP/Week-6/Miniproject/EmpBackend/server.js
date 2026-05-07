@@ -8,7 +8,7 @@ config()
  const app=exp()
 app.use(exp.json())
 app.use(cors({
-  origin:["http://localhost:5174"],
+  origin:["http://localhost:5173"],
 }))
 app.use('/employee',empapp)
 
