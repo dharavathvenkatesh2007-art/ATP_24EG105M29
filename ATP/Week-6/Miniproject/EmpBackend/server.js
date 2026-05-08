@@ -43,3 +43,5 @@ app.use((err,req,res,next)=>{
     res.status(500).json({message:"Error Occured",error:err.message})
 
 })
+
+export default app;
