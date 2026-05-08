@@ -19,7 +19,7 @@ function CreateEmployee() {
     try {
       setLoading(true);
       //make HTTP POST req
-      let res = await fetch("http://localhost:5000/employee/create", {
+      let res = await fetch("https://atp-24-eg-105-m29.vercel.app/employee/create", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newEmpObj),

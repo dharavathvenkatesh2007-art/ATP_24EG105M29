@@ -20,7 +20,7 @@ const gotoEmployee=((empObj)=>{
   })
   //delete the employes
 const gotodelete=async (id)=>{
-  const res=await axios.delete(`http://localhost:5000/employee/delete/${id}`)
+  const res=await axios.delete(`https://atp-24-eg-105-m29.vercel.app/employee/delete/${id}`)
   if(res.status==200)
   {
     getEmps();
@@ -28,7 +28,7 @@ const gotodelete=async (id)=>{
 
 }
 async function getEmps() {
-      let res = await fetch("http://localhost:5000/employee/list");
+      let res = await fetch("https://atp-24-eg-105-m29.vercel.app/employee/list");
       if (res.status === 200) {
         let resObj = await res.json();
         setEmps(resObj.payload);
