@@ -1,6 +1,0 @@
-[submodule "ATP/BLOG/Backend"]
-	path = ATP/BLOG/Backend
-	url = https://github.com/dharavathvenkatesh2007-art/BLOG-backend.git
-[submodule "ATP/BLOG/Frontend"]
-	path = ATP/BLOG/Frontend
-	url = https://github.com/dharavathvenkatesh2007-art/BLOG-Frontend.git
