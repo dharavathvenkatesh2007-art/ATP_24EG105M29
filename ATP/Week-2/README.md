@@ -5,8 +5,6 @@ This repository contains various JavaScript assignments and exercises designed t
 ---
 
 ##  File Overview
-
-### Day 3 – Array Methods Practice
 - **shopping_cart_summary.js**  
   Implements a shopping cart summary using:
   - `filter()` → in-stock products  
@@ -73,7 +71,6 @@ This repository contains various JavaScript assignments and exercises designed t
 
 ---
 
-### Day 4 – Objects, Copying, and Async Simulation
 - **Update_User_Object.js**  
   Demonstrates object cloning with spread operator and adding new property (`age`).
 
